@@ -1,16 +1,1 @@
-import matplotlib.pyplot as plt
-import numpy as np
 
-# Para el primer ejercicio voy a hacer la relacion entre las horas de estudio y puntajes de un examen
-np.random.seed(42)
-horas_estudio = np.random.rand(50) * 10  # De 0 a 10 horas
-puntaje = 2 * horas_estudio + np.random.randn(50) * 2  # Relación lineal con ruido
-
-plt.figure(figsize=(8, 5))
-plt.scatter(horas_estudio, puntaje, color='skyblue', edgecolor='black', alpha=0.8)
-
-plt.title('Relación entre Horas de Estudio y Puntaje')
-plt.xlabel('Horas de Estudio')
-plt.ylabel('Puntaje del Examen')
-plt.grid(True, linestyle='--', alpha=0.5)
-plt.show()
